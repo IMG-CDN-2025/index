@@ -4,63 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Cybar Pvt Ltd</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body { opacity: 0; transition: opacity 0.5s ease-in-out; background-color: #181818; color: #f8f9fa; }
+        .card { background-color: #252525; border: 1px solid #333; }
+        .card a { color: #17a2b8; text-decoration: none; font-weight: bold; }
+        .card a:hover { color: #20c997; }
+        .navbar-dark .navbar-nav .nav-link { color: #17a2b8; font-weight: bold; }
+        .navbar-dark .navbar-nav .nav-link:hover { color: #20c997; }
+        footer { background-color: #252525; color: #adb5bd; }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.opacity = "1";
+        });
+    </script>
 </head>
-<body class="bg-gray-900 text-white text-center">
-    <header class="bg-gray-800 py-4 shadow-lg">
-        <div class="max-w-6xl mx-auto px-6">
-            <h1 class="text-3xl font-bold">Cybar Pvt Ltd</h1>
-            <nav class="mt-4">
-                <ul class="flex justify-center space-x-6">
-                    <li><a href="https://discord.com/Uha49AXQNx" class="text-blue-400 hover:text-blue-300">Contact</a></li>
-                    <li><a href="https://donate.cybar.xyz" class="text-blue-400 hover:text-blue-300">Donate / Support Us</a></li>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cybar Pvt Ltd</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://discord.com/Uha49AXQNx">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://donate.cybar.xyz">Donate / Support Us</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
     
-    <main class="max-w-6xl mx-auto p-6">
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4 border-b pb-2">Our Websites</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <a href="https://gamedrive.org/" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">GameDrive</a>
-                <a href="https://games4u.org/" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Games4U</a>
-            </div>
-        </section>
+    <div class="container py-5 text-center">
+        <h2 class="mb-4">Our Websites</h2>
+        <div class="row py-3">
+            <div class="col-md-6 mb-3"><div class="card p-3"><a href="https://gamedrive.org/">GameDrive</a></div></div>
+            <div class="col-md-6 mb-3"><div class="card p-3"><a href="https://games4u.org/">Games4U</a></div></div>
+        </div>
         
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4 border-b pb-2">Our Tools & Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a href="https://pixeldrain-bypass.cybar.xyz/" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">PixelDrain Limit Bypass</a>
-                <a href="https://crypt.cybar.xyz/" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Base64 Link Encryptor</a>
-                <a href="https://gmail-generator.cybar.xyz/" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Gmail Generator</a>
-                <a href="https://steam-id-converter.cybar.xyz/" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Steam ID Converter</a>
-                <a href="https://lossless-scaling.cybar.xyz/" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Lossless Scaling</a>
-                <a href="https://idm.cybar.xyz/" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Internet Download Manager</a>
-                <a href="https://iobit.cybar.xyz/" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">IObit</a>
-                <a href="https://youtubevanced.cybar.xyz/" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">YouTube Vanced</a>
-                <a href="https://cricket-24.gamedrive.org" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Cricket 24</a>
-                <a href="https://office.cybar.xyz" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Office Tools</a>
-                <a href="https://accounts.cybar.xyz" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Accounts Share</a>
-                <a href="https://commonredist.cybar.xyz" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Redistributable Runtimes</a>
-                <a href="https://donate.cybar.xyz" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Donation Page</a>
-                <a href="https://countdown.cybar.xyz" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Game Release Countdown Maker</a>
-                <a href="https://winrar.cybar.xyz" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">WinRAR</a>
-            </div>
-        </section>
+        <h2 class="mb-4">Our Tools & Services</h2>
+        <div class="row py-3">
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://pixeldrain-bypass.cybar.xyz/">PixelDrain Limit Bypass</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://crypt.cybar.xyz/">Base64 Link Encryptor</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://gmail-generator.cybar.xyz/">Gmail Generator</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://steam-id-converter.cybar.xyz/">Steam ID Converter</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://lossless-scaling.cybar.xyz/">Lossless Scaling</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://idm.cybar.xyz/">Internet Download Manager</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://iobit.cybar.xyz/">IObit</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://youtubevanced.cybar.xyz/">YouTube Vanced</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://cricket-24.gamedrive.org">Cricket 24</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://office.cybar.xyz">Office Tools</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://accounts.cybar.xyz">Accounts Share</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://commonredist.cybar.xyz">Redistributable Runtimes</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://donate.cybar.xyz">Donation Page</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://countdown.cybar.xyz">Game Release Countdown Maker</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://winrar.cybar.xyz">WinRAR</a></div></div>
+        </div>
         
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4 border-b pb-2">Social Media</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a href="https://www.youtube.com/channel/UCR-kyJXQEiHaCYdprZXX04g" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">YouTube</a>
-                <a href="https://discord.com/Uha49AXQNx" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Discord</a>
-                <a href="https://t.me/+x_itZftWLeI5OGM1" class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700">Telegram</a>
-            </div>
-        </section>
-    </main>
+        <h2 class="mb-4">Social Media</h2>
+        <div class="row py-3">
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://www.youtube.com/channel/UCR-kyJXQEiHaCYdprZXX04g">YouTube</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://discord.com/Uha49AXQNx">Discord</a></div></div>
+            <div class="col-md-4 mb-3"><div class="card p-3"><a href="https://t.me/+x_itZftWLeI5OGM1">Telegram</a></div></div>
+        </div>
+    </div>
     
-    <footer class="text-center py-4 bg-gray-800 mt-8">
-        <p class="text-gray-400">&copy; 2025 Cybar Pvt Ltd. All rights reserved.</p>
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Cybar Pvt Ltd. All rights reserved.</p>
     </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
